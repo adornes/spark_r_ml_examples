@@ -10,13 +10,14 @@ sparkR.session(master = "local[*]", sparkConfig = list(spark.driver.memory = "2g
 
 library(dplyr)
 
-params.trainSample <- 1.0
-params.testSample  <- 1.0
-params.n.folds     <- 10
-params.outputFile  <- "~/submission.csv"
-
 params.trainInput <- "/path/to/train.csv"
 params.testInput  <- "/path/to/test.csv"
+
+params.trainSample <- 1.0
+params.testSample  <- 1.0
+
+params.outputFile  <- "/path/to/submission.csv"
+
 
 #****************************************
 print("Reading data from train.csv file")
